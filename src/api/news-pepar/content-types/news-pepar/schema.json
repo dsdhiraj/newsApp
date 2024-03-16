@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_pepars",
+  "info": {
+    "singularName": "news-pepar",
+    "pluralName": "news-pepars",
+    "displayName": "news pepar ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "peparFile": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "titleUrl": {
+      "type": "string"
+    }
+  }
+}
